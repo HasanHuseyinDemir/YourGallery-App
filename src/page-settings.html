@@ -1,0 +1,52 @@
+<h1 align="center">{{locals("title")}}</h1>
+<div id="settings">
+
+    <br>
+    <p>{{locals("filter")}}</p>
+
+    {{locals("search")}} : <input placeholder="{{locals("filter")}}" oninput="atomBulunan.found=0,filter=this.value,gVal('pageContainer')"></input>
+    <h4>{{locals("columns")}}</h4>
+    <select onchange="gVal('pageContainer',columns=parseInt(this.value))">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+    </select>
+    <br><br>
+    <!--Ekle çıkar  bölümü-->
+    <page-settings-form></page-settings-form>
+ 
+
+
+
+
+
+</div>
+
+<style>
+#settings{
+    height: 100%;
+    background-color: bisque;
+    padding:10px;
+    border:2px solid
+}
+
+.inputlist1{
+    display: grid;
+    padding: 10px;
+    background-color: gray;
+    color:white;
+    grid-template-columns: auto auto;
+}
+.section{
+    background-color:rgba(255, 255, 255, 0.291);
+    padding:10px;
+}
+</style>
+

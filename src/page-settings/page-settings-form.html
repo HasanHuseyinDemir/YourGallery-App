@@ -1,0 +1,79 @@
+<!--Getir Komutu-->
+<code>
+{{
+//
+getir=(value)=>{
+    baslikInput.value="";
+    aciklamaInput.value="";
+    urlInput.value="";
+images.filter((el)=>{
+    if(el.id==value){
+        baslikInput.value=el.title;
+        aciklamaInput.value=el.description;
+        urlInput.value=el.src;
+    }
+//
+})
+};
+
+
+""
+//
+}}
+</code>
+
+<!---->
+<code>
+{{
+handleInput=()=>{
+    ekleForm.baslik=baslikInput.value;
+    ekleForm.aciklama=aciklamaInput.value;
+    ekleForm.url=urlInput.value;
+    ekleForm.id=idInput.value;
+};""
+}}
+</code>
+
+
+<div class="section">
+    <h4 align="center">{{locals("add_and_delete")}}</h4><br>
+    <div>
+
+    <div class="inputlist1">
+    <b>ID</b><input onchange="getir(this.value);" oninput="handleInput()" id="idInput" placeholder="{{locals("add_id")}}-#{{images.length+1}}">
+    </div>
+    <div class="inputlist1">
+    <b>{{locals("title")}}</b>
+    <input oninput="handleInput()" id="baslikInput" placeholder="{{locals("add_title")}}">
+    </div>
+    <div class="inputlist1">
+    <b>{{locals("description")}}</b>
+    <input oninput="handleInput()" id="aciklamaInput" placeholder="{{locals("add_a_description")}}">
+    </div>
+    <div class="inputlist1">
+    <b>Url</b><input  oninput="handleInput(),set()" id="urlInput" placeholder="{{locals("add_url")}}">
+    </div>
+
+
+
+    <atom-ekle-button></atom-ekle-button>
+    <atom-sil-button></atom-sil-button>
+    
+</div>
+</div>
+
+
+
+<style>
+    #eklebtn{
+        height: 50px;
+        width: 100%;
+        background-color: darkgrey;
+        font-size: large;
+        transition: .2s;
+        border:none;
+    }
+    #eklebtn:hover{
+        background-color: cornflowerblue;
+    }
+</style>

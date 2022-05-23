@@ -1,0 +1,53 @@
+<h1 align="center" >{{locals("images")}}({{images.length}})</h1>
+{{filter?`<h3>${locals("filter")} : ${filter} <atom-bulunan></atom-bulunan></h3>`:""}}
+<div class="container">
+{{/*Sample Comment*/""}}
+
+{{
+    if(filter==""){
+        atomBulunan.found=0;
+        images.map((src)=>
+        `<composition-image>
+            <h3 id="titles" slot="title">${src.title?src.title:""}</h3>
+            <img slot="picture" style="max-height:100%;max-width:100%;"  src="${src.src}"></img>
+            <p id="description" style="margin-top:10px" slot="description">${src.description?src.description:"<br>"}</p>
+            <button slot="buttons" onclick="sil(${src.id})">${locals("delete")}</button>
+        </composition-image>`
+        ).join("");
+
+    }else{
+        images.map((src)=>{
+            if(src.title.toLowerCase()==filter.toLowerCase()){
+                atomBulunan.found++;
+                return `<composition-image>
+                    <h3 id="titles" slot="title">${src.title?src.title:""}</h3>
+                    <img slot="picture" style="max-height:100%;max-width:100%;"  src="${src.src}"></img>
+                    <p id="description" style="margin-top:10px" slot="description">${src.description?src.description:"<br>"}</p>
+                    <button slot="buttons" onclick="sil(${src.id})">${locals("delete")}</button>
+                </composition-image>`
+            }/**/}).join("");}
+}}
+</div>
+<style>
+    .container{
+        display:grid;
+        grid-template-columns: repeat({{columns}},{{100/columns}}%);
+        gap:5px;
+        row-gap:1.5vw;
+        border:1px solid;
+        padding:3%;
+        height:100%;
+        overflow:hidden;
+    }
+    img{
+        border-radius: 10px;
+    }
+    p#description{
+        font-weight: 300;
+        font-size: {{`${20-columns}`}}px;
+    }
+    h3#titles{
+        font-weight: 500;
+        font-size: {{`${26-columns}`}}px;
+    }
+</style>
