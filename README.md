@@ -1,3 +1,7 @@
-# Crud-Application-with-ContentJS
+<div align="center">
+<img width="200px" src="https://github.com/HasanHuseyinDemir/Crud-Application-with-ContentJS/blob/master/contentjs.png"/>
+</div>
+<h1 align="center">Crud Application</h1>
+<h5 align="center">with ContentJS</h5>
 
-![](https://github.com/HasanHuseyinDemir/Crud-Application-with-ContentJS/blob/master/contentjs.png =250x250)
+[Demo](https://hasanhuseyindemir.github.io/Crud-Application-with-ContentJS/)
