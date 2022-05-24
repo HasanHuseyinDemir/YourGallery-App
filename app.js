@@ -2,7 +2,7 @@
 //Resimlerin bulunduğu alan
 let pageContainer={type:"page",name:"page-container",src:"./src/page-container.html"};
 //Resimlerin kalıpları
-let compositionImage={type:"composition",name:"composition-image",src:"./src/composition-image.html"};
+let compositionImage={type:"static-composition",name:"composition-image",src:"./src/composition-image.html"};
 //
 let pageSettings={type:"page",name:"page-settings",src:"./src/page-settings.html"};
 let pageSettingsForm={type:"page",name:"page-settings-form",src:"./src/page-settings/page-settings-form.html"};
@@ -27,6 +27,7 @@ let atomEkleButton={
         ekleForm.aciklama="";
         ekleForm.url="";
         ekleForm.id="";
+        localStorage.setItem("images",JSON.stringify(images));
     },
     data:()=>{
         return `<button id="eklebtn" onclick="atomEkleButton.Ekle(),val(),set()">${ekleForm.url.length>0?`${locals("add")}`:`${locals("add_random_image")}`}</button>`
@@ -36,7 +37,8 @@ let atomSilButton={
     type:"atom",
     name:"atom-sil-button",
     resimSil:()=>{
-        images.pop();val(),set()
+        images.pop();val(),set();
+        localStorage.setItem("images",JSON.stringify(images));
     },
     data:()=>{
         return `<button id="eklebtn" onclick='atomSilButton.resimSil()'>
@@ -104,38 +106,45 @@ const rastgele={
 
 }
 
+let defaultimages=[        
+{
+    id:1,
+    title:"Dünya",
+    src:"https://wikiimg.tojsiabtv.com/wikipedia/commons/2/2c/Rotating_earth_%28large%29.gif",
+    description:"Dünya dönüyor sen ne dersen de..."
+},
+{
+    id:2,
+    title:"Yürüyen kedi",
+    src:"https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/5eeea355389655.59822ff824b72.gif",
+    description:"Kedinin neşesi yerinde"
+},
+{
+    id:3,
+    title:"Among Us",
+    src:"https://media3.giphy.com/media/RtdRhc7TxBxB0YAsK6/giphy.gif",
+    description:"AMOGUS"
+},
+{
+    id:4,
+    title:"Kedi",
+    src:"https://i.cnnturk.com/i/cnnturk/75/740x416/602d00735cf3b01e7cb045c0.jpg",
+    description:"Epey bir şımarık"
+},
+{
+    id:5,
+    title:"Dünya",
+    src:"https://wikiimg.tojsiabtv.com/wikipedia/commons/2/2c/Rotating_earth_%28large%29.gif",
+    description:"Dünya dönüyor sen ne dersen de..."
+},
+];
 
+let storageImages=JSON.parse(localStorage.getItem("images"));
 
+let images;
+if(!storageImages){
+    images=defaultimages;
+}else{
+    images=storageImages;
+}
 
-let images=[
-    {
-        id:1,
-        title:"Dünya",
-        src:"https://wikiimg.tojsiabtv.com/wikipedia/commons/2/2c/Rotating_earth_%28large%29.gif",
-        description:"Dünya dönüyor sen ne dersen de..."
-    },
-    {
-        id:2,
-        title:"Yürüyen kedi",
-        src:"https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/5eeea355389655.59822ff824b72.gif",
-        description:"Kedinin neşesi yerinde"
-    },
-    {
-        id:3,
-        title:"Among Us",
-        src:"https://media3.giphy.com/media/RtdRhc7TxBxB0YAsK6/giphy.gif",
-        description:"AMOGUS"
-    },
-    {
-        id:4,
-        title:"Kedi",
-        src:"https://i.cnnturk.com/i/cnnturk/75/740x416/602d00735cf3b01e7cb045c0.jpg",
-        description:"Epey bir şımarık"
-    },
-    {
-        id:5,
-        title:"Dünya",
-        src:"https://wikiimg.tojsiabtv.com/wikipedia/commons/2/2c/Rotating_earth_%28large%29.gif",
-        description:"Dünya dönüyor sen ne dersen de..."
-    },
-]

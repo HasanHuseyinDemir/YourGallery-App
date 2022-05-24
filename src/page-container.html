@@ -1,4 +1,4 @@
-<h1 align="center" >{{locals("images")}}({{images.length}})</h1>
+<h1 align="center" class="title" >{{locals("images")}}({{images.length}})</h1>
 {{filter?`<h3>${locals("filter")} : ${filter} <atom-bulunan></atom-bulunan></h3>`:""}}
 <div class="container">
 {{/*Sample Comment*/""}}
@@ -33,7 +33,7 @@
         display:grid;
         grid-template-columns: repeat({{columns}},{{100/columns}}%);
         gap:5px;
-        row-gap:1.5vw;
+        row-gap:2%;
         border:1px solid;
         padding:3%;
         height:100%;
