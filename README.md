@@ -4,4 +4,4 @@
 <h1 align="center">Crud Application</h1>
 <h5 align="center">with ContentJS</h5>
 
-[Demo](https://hasanhuseyindemir.github.io/Crud-Application-with-ContentJS/)
+[Demo](https://hasanhuseyindemir.github.io/YourGallery-App/)
