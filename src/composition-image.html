@@ -2,7 +2,7 @@
     <div>
         <div align="center" id="picture">
         <slot name="picture"></slot>
-        <slot name="title"></slot>
+        <slot id="slotTitle" name="title"></slot>
         <slot name="description"></slot>
         <slot name="buttons"></slot>
         </div>
@@ -14,6 +14,9 @@
             border-radius: 10px;
             height:100%;
         }
+        #titles {
+    font-size:3vw;
+}
 
     </style>
     </div>
