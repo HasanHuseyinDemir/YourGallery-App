@@ -50,6 +50,7 @@ sil=(arg)=>{
         return el.id !== arg
     })
 gVal("pageContainer");
+localStorage.setItem("images",JSON.stringify(images));
 set();    
 }
 
@@ -147,4 +148,3 @@ if(!storageImages){
 }else{
     images=storageImages;
 }
-
