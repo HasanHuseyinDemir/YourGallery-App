@@ -47,4 +47,4 @@ window.atomSilButton={
 }
 
 
-window.contents=[columnsPage,atomBulunan,atomSilButton,atomEkleButton,pageContainer,compositionImage,pageSettings,pageSettingsForm,selectedPage];
+window.contents=[columnsPage,pageSettings,atomBulunan,atomSilButton,atomEkleButton,pageContainer,compositionImage,pageSettingsForm,selectedPage,];

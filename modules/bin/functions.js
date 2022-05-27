@@ -34,4 +34,5 @@ window.toggleAboutImage=(selectedImage)=>{
     aboutImage=!aboutImage;
     window.selectedImage=selectedImage;
     val();
+    gVal("pageSettings");//Delete Button Fix;
 }

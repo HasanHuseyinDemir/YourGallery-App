@@ -1,5 +1,6 @@
 <h1 align="center" class="title" >{{locals("images")}}({{images.length}})</h1>
 {{filter?`<h3>${locals("filter")} : ${filter} <atom-bulunan></atom-bulunan></h3>`:""}}
+
 <div class="container">
 {{
     atomBulunan.found=0;
@@ -14,7 +15,7 @@
 }}
 </div>
 
-{{document.title=`YourGallery (${images.length})`}}
+{{document.title=`YourGallery (${images.length})`,""}}
 
 <style>
     .container{

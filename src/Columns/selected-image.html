@@ -1,5 +1,6 @@
 <h1 align="center" class="title" >
 {{
+    gVal("pageSettings");
     if(images.find(el=>el.id==selectedImage)){
         images.find(el=>el.id==selectedImage).title;
     }
@@ -33,9 +34,11 @@
         document.title="Hata!";
         `<div class="containerImage">
             <button onclick="toggleAboutImage()">Geri Dön</button><br>
-        
+                <p align="center">Aradığınız Resim Silinmiş Olabilir!</p>
+                <p align="center">Anasayfaya yönlendiriliyorsunuz...</p>
+                ${setTimeout(()=>{toggleAboutImage()},3000),""}
                 <div id="card">
-                    <img id="cards" src="https://cdn.pixabay.com/photo/2012/04/12/22/25/warning-sign-30915__340.png"/>
+                    <img id="cards" src="https://c.tenor.com/IHdlTRsmcS4AAAAM/404.gif"/>
                 </div>
         
         </div>`
