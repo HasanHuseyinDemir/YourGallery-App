@@ -13,6 +13,14 @@ window.rastgele={
     "https://i.gifer.com/origin/16/16eb0115a58cfc3994a0c540f8e994e3_w200.gif",
     "https://www.boehringer-ingelheim.com/sites/default/files/Animal_Health/Cat%20ages%20and%20stages%20Kachel.jpg"],
 
+    errorGif:[
+        "https://media0.giphy.com/media/3zhxq2ttgN6rEw8SDx/200w.gif",
+        "https://c.tenor.com/OyUVgQi-l-QAAAAC/404.gif",
+        "https://c.tenor.com/IHdlTRsmcS4AAAAM/404.gif",
+        "https://media2.giphy.com/media/14uQ3cOFteDaU/giphy.gif",
+        "https://www.icegif.com/wp-content/uploads/crying-icegif-1.gif",
+        "https://media1.giphy.com/media/lAoJiJLWTiJ5eKCxWg/200.gif"],
+
     basliklar:[
         "Güzel Resim","Komik","Büyük ihtimalle kedi","Şirin","Haha","Nedir bu","Ne bu la","Rastgele Resim","VOOV","Foo","Boo","Selam","Telifsiz Resim","Köpek mi bu?","Havv","Miyavvv","MiyHavvvv"
     ],
@@ -20,6 +28,10 @@ window.rastgele={
     aciklamalar:[
         "Evet","Açıklama yok",":)","Köpek","Kedi","Hahahaha","Böylesi gelmez","İşte bu!","Selamlar","Merhabalar","Bizde böyle","Hayvan","Komik","Miyavvv","Havvv","Köpekçik"
     ],
+
+    error:()=>{
+        return rastgele.errorGif[Math.floor(Math.random()*rastgele.errorGif.length)];
+    },
 
     resim:()=>{
         return rastgele.resimler[Math.floor(Math.random()*rastgele.resimler.length)]

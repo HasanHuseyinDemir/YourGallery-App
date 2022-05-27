@@ -28,11 +28,16 @@ window.handleInput = () => {
     ekleForm.url = urlInput.value;
 };
 
-
-window.aboutImage=false;
 window.toggleAboutImage=(selectedImage)=>{
     aboutImage=!aboutImage;
     window.selectedImage=selectedImage;
     val();
     gVal("pageSettings");//Delete Button Fix;
+}
+
+window.toggleEditing=()=>{
+    edit=!edit;
+    val();
+    gVal("pageSettings");
+    document.querySelector("#txtArea").value=images.find(el=>el.id==selectedImage).description;
 }

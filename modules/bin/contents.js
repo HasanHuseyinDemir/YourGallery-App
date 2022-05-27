@@ -1,7 +1,8 @@
-window.selectedImage="";
+
 //Columns
 window.pageContainer={type:"page",name:"container-page",src:"./src/Columns/container-page.html"};
 window.pageSettings={type:"page",name:"settings-page",src:"./src/Columns/settings-page.html"};
+window.editPage={type:"page",name:"edit-page",src:"./src/Columns/edit-page.html"}
 
 window.compositionImage={type:"static-composition",name:"image-composition",src:"./src/image-composition.html"};
 window.pageSettingsForm={type:"page",name:"settings-form",src:"./src/settings-form.html"};
@@ -47,4 +48,4 @@ window.atomSilButton={
 }
 
 
-window.contents=[columnsPage,pageSettings,atomBulunan,atomSilButton,atomEkleButton,pageContainer,compositionImage,pageSettingsForm,selectedPage,];
+window.contents=[columnsPage,pageSettings,atomBulunan,atomSilButton,atomEkleButton,pageContainer,compositionImage,pageSettingsForm,selectedPage,editPage];

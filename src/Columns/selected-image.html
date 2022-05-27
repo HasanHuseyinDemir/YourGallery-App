@@ -21,13 +21,9 @@
             <button onclick="toggleAboutImage()">Geri Dön</button><br>
             
             <!--Todo Düzenleme sayfası açılacak-->
-            <button onclick="alert('Yapım Aşamasında!')">Düzenle</button>
+            <button onclick="toggleEditing()">Düzenle</button>
         
-                <div id="card">
-                <img id="cards" src="${images.find(el=>el.id==selectedImage).src}"/>
-                <h1 id="cards" align="center">${images.find(el=>el.id==selectedImage).title}</h1>
-                <p id="cards">${images.find(el=>el.id==selectedImage).description}</p>
-                </div>
+            ${editing()}
         
         </div>`
     }else{
@@ -38,9 +34,8 @@
                 <p align="center">Anasayfaya yönlendiriliyorsunuz...</p>
                 ${setTimeout(()=>{toggleAboutImage()},3000),""}
                 <div id="card">
-                    <img id="cards" src="https://c.tenor.com/IHdlTRsmcS4AAAAM/404.gif"/>
+                    <img id="cards" src="${rastgele.error()}"/>
                 </div>
-        
         </div>`
     }
 

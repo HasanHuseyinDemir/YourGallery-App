@@ -1,9 +1,11 @@
-window.columns=4;
+window.columns=3;
 window.filter="";
 window.filtered="";
 window.found=0;
 window.lang="TR";
 
+window.aboutImage=false;
+window.edit=false;
 
 window.ekleForm={
     baslik:"",
@@ -21,3 +23,4 @@ if(!storageImages){
 }else{
     images=storageImages;
 }
+window.selectedImage=images[0].id;
