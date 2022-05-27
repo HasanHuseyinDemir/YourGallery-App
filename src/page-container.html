@@ -4,28 +4,15 @@
 {{/*Sample Comment*/""}}
 
 {{
-    if(filter==""){
-        atomBulunan.found=0;
-        images.map((src)=>
-        `<composition-image>
-            <h3 id="titles" slot="title">${src.title?src.title:""}</h3>
-            <img slot="picture" style="max-height:100%;max-width:100%;"  src="${src.src}"></img>
-            <p id="description" style="margin-top:10px" slot="description">${src.description?src.description:"<br>"}</p>
-            <button slot="buttons" onclick="sil(${src.id})">${locals("delete")}</button>
-        </composition-image>`
-        ).join("");
-
+    atomBulunan.found=0;
+    if(filter==""){ 
+        images.map((src)=>compositions(src)).join("");
     }else{
         images.map((src)=>{
             if(src.title.toLowerCase()==filter.toLowerCase()){
-                atomBulunan.found++;
-                return `<composition-image>
-                    <h3 id="titles" slot="title">${src.title?src.title:""}</h3>
-                    <img slot="picture" style="max-height:100%;max-width:100%;"  src="${src.src}"></img>
-                    <p id="description" style="margin-top:10px" slot="description">${src.description?src.description:"<br>"}</p>
-                    <button slot="buttons" onclick="sil(${src.id})">${locals("delete")}</button>
-                </composition-image>`
-            }/**/}).join("");}
+                atomBulunan.found++; 
+                return compositions(src);
+    }/**/}).join("");}
 }}
 </div>
 <style>
@@ -35,9 +22,9 @@
         gap:5px;
         row-gap:2%;
         border:1px solid;
-        padding:3%;
-        height:100%;
-        overflow:hidden;
+        padding:2%;
+        height:auto;
+        overflow-x:scroll;
     }
     img{
         border-radius: 10px;
