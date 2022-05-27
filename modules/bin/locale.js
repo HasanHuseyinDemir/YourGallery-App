@@ -1,9 +1,9 @@
-changeLocale=(arg)=>{
+window.changeLocale=(arg)=>{
     lang=arg
     val();set();
 }
     
-const locals=(arg)=>{
+window.locals=(arg)=>{
     switch(lang){
         case "TR":
         switch(arg){
@@ -20,6 +20,7 @@ const locals=(arg)=>{
             case "add_title":return "Başlık Ekleyin";
             case "add_url":return "Url Ekleyin";
             case "add_id":return "ID Ekleyin";
+            case "add":return "Ekle";
             case "delete":return "Sil";
         }break;
         case "EN":
@@ -37,6 +38,7 @@ const locals=(arg)=>{
             case "add_title":return "Add Title";
             case "add_url":return "Add Url";
             case "add_id":return "Add ID";
+            case "add":return "Add";
             case "delete":return "Delete";
         }    
         break;

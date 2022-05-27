@@ -1,8 +1,6 @@
 <h1 align="center" class="title" >{{locals("images")}}({{images.length}})</h1>
 {{filter?`<h3>${locals("filter")} : ${filter} <atom-bulunan></atom-bulunan></h3>`:""}}
 <div class="container">
-{{/*Sample Comment*/""}}
-
 {{
     atomBulunan.found=0;
     if(filter==""){ 
@@ -15,16 +13,17 @@
     }/**/}).join("");}
 }}
 </div>
+
 <style>
     .container{
         display:grid;
         grid-template-columns: repeat({{columns}},{{100/columns}}%);
-        gap:5px;
-        row-gap:2%;
+        column-gap:5px;
+        row-gap:1.5vw;
         border:1px solid;
-        padding:2%;
+        padding:3%;
         height:auto;
-        overflow-x:scroll;
+        overflow-y:scroll;
     }
     img{
         border-radius: 10px;
