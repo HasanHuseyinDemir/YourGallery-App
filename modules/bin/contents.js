@@ -1,3 +1,4 @@
+window.selectedImage="";
 //Columns
 window.pageContainer={type:"page",name:"container-page",src:"./src/Columns/container-page.html"};
 window.pageSettings={type:"page",name:"settings-page",src:"./src/Columns/settings-page.html"};
@@ -5,6 +6,8 @@ window.pageSettings={type:"page",name:"settings-page",src:"./src/Columns/setting
 window.compositionImage={type:"static-composition",name:"image-composition",src:"./src/image-composition.html"};
 window.pageSettingsForm={type:"page",name:"settings-form",src:"./src/settings-form.html"};
 window.columnsPage={type:"page",name:"columns-page",src:"./src/columns-page.html"};
+window.selectedPage={type:"page",name:"selected-image",src:"./src/Columns/selected-image.html"};
+
 
 window.atomBulunan={
     found:0,
@@ -43,4 +46,5 @@ window.atomSilButton={
     }
 }
 
-window.contents=[columnsPage,atomBulunan,atomSilButton,atomEkleButton,pageContainer,compositionImage,pageSettings,pageSettingsForm,];
+
+window.contents=[columnsPage,atomBulunan,atomSilButton,atomEkleButton,pageContainer,compositionImage,pageSettings,pageSettingsForm,selectedPage];

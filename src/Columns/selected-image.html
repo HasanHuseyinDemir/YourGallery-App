@@ -1,0 +1,108 @@
+<h1 align="center" class="title" >
+{{
+    if(images.find(el=>el.id==selectedImage)){
+        images.find(el=>el.id==selectedImage).title;
+    }
+    else{
+        "Bulunamadı!"
+    }
+}}</h1>
+
+{{
+    if(images.find(el=>el.id==selectedImage)){
+        document.title=`YG-${images.find(el=>el.id==selectedImage).title}`;
+    };""
+}}
+
+{{
+    if(images.find(el=>el.id==selectedImage)){
+        `<div class="containerImage">
+            <button onclick="toggleAboutImage()">Geri Dön</button><br>
+            
+            <!--Todo Düzenleme sayfası açılacak-->
+            <button onclick="alert('Yapım Aşamasında!')">Düzenle</button>
+        
+                <div id="card">
+                <img id="cards" src="${images.find(el=>el.id==selectedImage).src}"/>
+                <h1 id="cards" align="center">${images.find(el=>el.id==selectedImage).title}</h1>
+                <p id="cards">${images.find(el=>el.id==selectedImage).description}</p>
+                </div>
+        
+        </div>`
+    }else{
+        document.title="Hata!";
+        `<div class="containerImage">
+            <button onclick="toggleAboutImage()">Geri Dön</button><br>
+        
+                <div id="card">
+                    <img id="cards" src="https://cdn.pixabay.com/photo/2012/04/12/22/25/warning-sign-30915__340.png"/>
+                </div>
+        
+        </div>`
+    }
+
+}}
+
+
+
+
+
+<style>
+    .containerImage{
+    border:1px solid;
+    padding:3%;
+    height:auto;
+    background-color: rgba(240, 248, 255, 0.773);
+    }
+
+    .containerImage>button{
+    height: 3vw;
+    width:100%;
+    border:none;
+    cursor:pointer;
+    font-weight: 700;
+    font-size:16px;
+    color:rgb(255,255,255);
+    background-color: rgba(0,79,58,0.45);
+    transition:.5s;
+}
+.containerImage>button:hover{
+    background-color: rgba(0,79,58,0.81);
+}
+
+.containerImage h1#cards{
+    margin-top:2%;
+    padding: 1%;
+    background-color:rgba(0,0,0,0.4);
+    text-shadow: 0 3px 3px rgba(0,0,0,0.45);
+    box-shadow: 0 1px 3px gray;
+    color: white;
+}
+
+img#cards{
+    height: 25vw;
+    margin-left: 25%;
+    border:2px solid rgba(128,128,128,0.12);
+    transition:.4s;
+    cursor: pointer;
+}
+img#cards:hover {
+    border-radius: 0;
+    box-shadow:3px 3px 6px rgba(0,0,0,0.27);
+}
+.containerImage p#cards{
+    background-color:rgba(0,0,0,0.07);
+
+    margin-top: 0.5vw;
+    padding: 1vw;
+    font-size:19px;
+    text-align: center;
+}
+.containerImage #card{
+    padding: 3vw;
+    border:2px solid rgba(128,128,128,0.15);
+    background-color:rgba(222,239,241,0.59);
+}
+
+
+</style>    

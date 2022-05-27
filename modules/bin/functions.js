@@ -27,3 +27,11 @@ window.handleInput = () => {
     ekleForm.aciklama = aciklamaInput.value;
     ekleForm.url = urlInput.value;
 };
+
+
+window.aboutImage=false;
+window.toggleAboutImage=(selectedImage)=>{
+    aboutImage=!aboutImage;
+    window.selectedImage=selectedImage;
+    val();
+}

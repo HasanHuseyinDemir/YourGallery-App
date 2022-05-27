@@ -6,17 +6,18 @@
     <b>{{locals("title")}}</b>
     <input oninput="handleInput()" id="baslikInput" placeholder="{{locals("add_title")}}">
     </div>
+
     <div class="inputlist1">
     <b>{{locals("description")}}</b>
-    <input oninput="handleInput()" id="aciklamaInput" placeholder="{{locals("add_a_description")}}">
+    <textarea oninput="handleInput()" id="aciklamaInput" type="text" placeholder="{{locals("add_a_description")}}"></textarea>
     </div>
+    
     <div class="inputlist1">
     <b>Url</b><input  oninput="handleInput(),set()" id="urlInput" placeholder="{{locals("add_url")}}">
     </div>
 
     <atom-ekle-button></atom-ekle-button>
     <atom-sil-button></atom-sil-button>
-    
 </div>
 </div>
 
