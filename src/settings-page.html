@@ -4,7 +4,6 @@
     <br>
     <p>{{locals("filter")}}</p>
     
-
     <div id="searc"><span>{{locals("search")}}</span> : <input placeholder="{{locals("filter")}}" oninput="atomBulunan.found=0,filter=this.value,gVal('pageContainer')"></input></div>
     <br><br>
     <div align="center">
@@ -25,28 +24,8 @@
 
     <br><br>
     <!--Ekle çıkar  bölümü-->
-    <page-settings-form></page-settings-form>
+    <settings-form></settings-form>
 
 </div>
 
-<style>
-#settings{
-    height: 100%;
-    background-color: bisque;
-    padding:10px;
-    border:2px solid
-}
-
-.inputlist1{
-    display: grid;
-    padding: 10px;
-    background-color: gray;
-    color:white;
-    grid-template-columns: auto auto;
-}
-.section{
-    background-color:rgba(255, 255, 255, 0.291);
-    padding:10px;
-}
-</style>
 

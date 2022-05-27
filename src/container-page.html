@@ -16,23 +16,13 @@
 
 <style>
     .container{
-        display:grid;
-        grid-template-columns: repeat({{columns}},{{100/columns}}%);
-        column-gap:5px;
-        row-gap:1.5vw;
-        border:1px solid;
-        padding:3%;
-        height:auto;
-        overflow-y:scroll;
-    }
-    img{
-        border-radius: 10px;
-    }
-    p#description{
-        font-weight: 300;
-        font-size: {{`${20-columns}`}}px;
-    }
-    h3#titles{
-        font-weight: 500;
-    }
+    display:grid;
+    grid-template-columns: repeat({{columns}},{{100/columns}}%);
+    column-gap:5px;
+    row-gap:1.5vw;
+    border:1px solid;
+    padding:3%;
+    height:auto;
+    overflow-y:scroll;
+}
 </style>
