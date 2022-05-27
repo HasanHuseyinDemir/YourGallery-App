@@ -1,10 +1,10 @@
-//Resimlerin bulunduğu alan
-window.pageContainer={type:"page",name:"container-page",src:"./src/container-page.html"};
-//Resimlerin kalıpları
+//Columns
+window.pageContainer={type:"page",name:"container-page",src:"./src/Columns/container-page.html"};
+window.pageSettings={type:"page",name:"settings-page",src:"./src/Columns/settings-page.html"};
+
 window.compositionImage={type:"static-composition",name:"image-composition",src:"./src/image-composition.html"};
-//
-window.pageSettings={type:"page",name:"settings-page",src:"./src/settings-page.html"};
 window.pageSettingsForm={type:"page",name:"settings-form",src:"./src/settings-form.html"};
+window.columnsPage={type:"page",name:"columns-page",src:"./src/columns-page.html"};
 
 window.atomBulunan={
     found:0,
@@ -14,7 +14,6 @@ window.atomBulunan={
         return `(${atomBulunan.found})`
     }
 }
-
 
 window.atomEkleButton={
     type:"atom",
@@ -44,5 +43,4 @@ window.atomSilButton={
     }
 }
 
-
-window.contents=[atomBulunan,atomSilButton,atomEkleButton,pageContainer,compositionImage,pageSettings,pageSettingsForm];
+window.contents=[columnsPage,atomBulunan,atomSilButton,atomEkleButton,pageContainer,compositionImage,pageSettings,pageSettingsForm,];
