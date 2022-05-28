@@ -6,15 +6,27 @@
 <div style="display:flex;" id="con">
 <edit-image-view></edit-image-view>
 <br>
+
+<div id="editFlex">
+    
 <div>
-<input type="text" oninput="editPref.title=this.value" value="{{editPref.title}}"><br>
+<h3 id="editText">Başlık</h3>
+<input type="text" oninput="editPref.title=this.value" value="{{editPref.title}}">
+</div>
+
+<div>
+<h3 id="editText">Url</h3>
 <input type="text" id="source" oninput="editPref.src=this.value,set()" value="{{editPref.src}}"><br>
-<textarea oninput="editPref.description=this.value" style="resize:vertical">{{editPref.description}}</textarea>
 </div>
+
+</div>
+
+
 </div>
 
 
 <div>
+    <textarea oninput="editPref.description=this.value" style="resize:vertical">{{editPref.description}}</textarea>
 <button onclick="editPref.set();save();edit=false;val();" align="center" height="100%">Kaydet</button>
 <button onclick="editPref.delete();save();edit=false;val();" align="center" height="100%">Sil</button>
 </div>
