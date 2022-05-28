@@ -1,6 +1,8 @@
 <h1 align="center" class="title" >
+
 {{
     gVal("pageSettings");
+    editPref.clear();
     if(images.find(el=>el.id==selectedImage)){
         images.find(el=>el.id==selectedImage).title;
     }
@@ -8,6 +10,8 @@
         "Bulunamadı!"
     }
 }}</h1>
+
+{{editImage=false;""}}
 
 {{
     if(images.find(el=>el.id==selectedImage)){

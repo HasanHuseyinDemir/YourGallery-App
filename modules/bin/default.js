@@ -6,6 +6,35 @@ window.lang="TR";
 
 window.aboutImage=false;
 window.edit=false;
+window.editImage="";
+
+window
+
+window.editPref={
+    index:"",
+    title:"",
+    src:"",
+    description:"",
+    clear:()=>{
+        editPref.index="",
+        editPref.title="",
+        editPref.src="",
+        editPref.description=""
+    },
+    get:()=>{
+        editPref.index=images.indexOf(images.find(el=>el.id===selectedImage));
+        editPref.title=images.find(el=>el.id===selectedImage).title;
+        editPref.src=images.find(el=>el.id===selectedImage).src;
+        editPref.description=images.find(el=>el.id===selectedImage).description;
+    },
+    set:()=>{
+        images[editPref.index].src=editPref.src;
+        images[editPref.index].title=editPref.title;
+        images[editPref.index].description=editPref.description;
+        val();
+    }
+}
+
 
 window.ekleForm={
     baslik:"",

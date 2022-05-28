@@ -47,5 +47,12 @@ window.atomSilButton={
     }
 }
 
+window.editImageView={
+    type:"atom",
+    name:"edit-image-view",
+    data:()=>{
+        return `<img src="${editPref.src}">`
+    }
+}
 
-window.contents=[columnsPage,pageSettings,atomBulunan,atomSilButton,atomEkleButton,pageContainer,compositionImage,pageSettingsForm,selectedPage,editPage];
+window.contents=[columnsPage,pageSettings,atomBulunan,atomSilButton,atomEkleButton,pageContainer,compositionImage,pageSettingsForm,selectedPage,editPage,editImageView];

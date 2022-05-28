@@ -39,5 +39,4 @@ window.toggleEditing=()=>{
     edit=!edit;
     val();
     gVal("pageSettings");
-    document.querySelector("#txtArea").value=images.find(el=>el.id==selectedImage).description;
 }
