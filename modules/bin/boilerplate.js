@@ -10,7 +10,7 @@ window.cards=()=>{
     return `<div id="card">
     <img id="cards" src="${images.find(el=>el.id==selectedImage).src}"/>
     <h1 id="cards" align="center">${images.find(el=>el.id==selectedImage).title}</h1>
-    <p id="cards">${images.find(el=>el.id==selectedImage).description}</p>
+    <div id="cards">${images.find(el=>el.id==selectedImage).description}</div>
     </div>`
 }
 window.editing=()=>{
