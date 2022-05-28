@@ -19,6 +19,16 @@ window.atomBulunan={
     }
 }
 
+window.yourGallery={
+    text:"YoGa",
+    type:"atom",
+    name:"your-gallery",
+    data:()=>{
+        return `${yourGallery.text}` 
+    }
+}
+
+
 window.atomEkleButton={
     type:"atom",
     name:"atom-ekle-button",
@@ -55,4 +65,4 @@ window.editImageView={
     }
 }
 
-window.contents=[columnsPage,pageSettings,atomBulunan,atomSilButton,atomEkleButton,pageContainer,compositionImage,pageSettingsForm,selectedPage,editPage,editImageView];
+window.contents=[columnsPage,pageSettings,atomBulunan,atomSilButton,atomEkleButton,pageContainer,compositionImage,pageSettingsForm,selectedPage,editPage,editImageView,yourGallery];

@@ -8,7 +8,15 @@ window.aboutImage=false;
 window.edit=false;
 window.editImage="";
 
-window
+document.querySelector("your-gallery").addEventListener("mouseenter",()=>{
+    yourGallery.text="YourGallery";
+    set();
+})
+
+document.querySelector("your-gallery").addEventListener("mouseleave",()=>{
+    yourGallery.text="YoGa";
+    set();
+})
 
 window.editPref={
     index:"",
