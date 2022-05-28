@@ -12,7 +12,12 @@
 <textarea oninput="editPref.description=this.value" style="resize:vertical">{{editPref.description}}</textarea>
 </div>
 </div>
-<button  onclick="editPref.set();save();edit=false;val();" align="center" height="100%">Kaydet</button>
+
+
+<div>
+<button onclick="editPref.set();save();edit=false;val();" align="center" height="100%">Kaydet</button>
+<button onclick="editPref.delete();save();edit=false;val();" align="center" height="100%">Sil</button>
+</div>
 
 <style>
     .containerImage h1 {

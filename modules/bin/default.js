@@ -40,6 +40,9 @@ window.editPref={
         images[editPref.index].title=editPref.title;
         images[editPref.index].description=editPref.description;
         val();
+    },
+    delete:()=>{
+        images.splice(editPref.index);
     }
 }
 
