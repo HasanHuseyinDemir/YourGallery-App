@@ -42,6 +42,7 @@ window.editPref={
         val();
     },
     delete:()=>{
+        console.log("Silindi");
         images.splice(editPref.index);
     }
 }
