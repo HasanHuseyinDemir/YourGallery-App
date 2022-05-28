@@ -1,4 +1,6 @@
-window.lang=localStorage.getItem("language")?localStorage.getItem("language"):localStorage.setItem("language","EN");
+window.lang="EN";
+window.lang=localStorage.getItem("language")?localStorage.getItem("language"):"EN";
+
 window.changeLocale=(arg)=>{
     lang=arg
     set();val();gVal("pageSettingsForm");

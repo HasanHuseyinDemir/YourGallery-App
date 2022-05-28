@@ -2,11 +2,6 @@ window.columns=localStorage.getItem("columns")?localStorage.getItem("columns"):3
 window.filter="";
 window.filtered="";
 window.found=0;
-window.lang="";
-
-
-
-
 window.aboutImage=false;
 window.edit=false;
 window.editImage="";
