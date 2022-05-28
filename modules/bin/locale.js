@@ -1,6 +1,6 @@
 window.changeLocale=(arg)=>{
     lang=arg
-    val();set();
+    set();val();gVal("pageSettingsForm");
 }
     
 window.locals=(arg)=>{
@@ -22,6 +22,10 @@ window.locals=(arg)=>{
             case "add_id":return "ID Ekleyin";
             case "add":return "Ekle";
             case "delete":return "Sil";
+            case "go_back":return "Geri Dön";
+            case "edit":return "Düzenle";
+            case "page_content":return "Sayfa İçeriği";
+            case "save":return "Kaydet";
         }break;
         case "EN":
         switch(arg){
@@ -40,6 +44,10 @@ window.locals=(arg)=>{
             case "add_id":return "Add ID";
             case "add":return "Add";
             case "delete":return "Delete";
+            case "go_back":return "Go Back";
+            case "edit":return "Edit";
+            case "page_content":return "Page Content";
+            case "save":return "Save";
         }    
         break;
     }

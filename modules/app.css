@@ -316,3 +316,18 @@ edit-page > #editFlex {
 #iconsNav {
   height: 100%;
 }
+image-composition {
+  height: 100%
+}
+.container img {
+  width: 100%;
+}
+h3#titles {
+  height: 4vw;
+}
+#imageselected{
+  display: flex;
+  justify-content: center;
+  margin-left: -30%;
+  align-items: center;
+}

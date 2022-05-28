@@ -65,4 +65,4 @@ window.editImageView={
     }
 }
 
-window.contents=[columnsPage,atomBulunan,atomSilButton,atomEkleButton,pageContainer,compositionImage,pageSettingsForm,selectedPage,editPage,editImageView,yourGallery,pageSettings];
+window.contents=[columnsPage,atomBulunan,atomSilButton,atomEkleButton,pageContainer,compositionImage,selectedPage,editPage,editImageView,yourGallery,pageSettings,pageSettingsForm];

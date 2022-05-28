@@ -1,5 +1,6 @@
 {{document.title=`YoGa (${images.length})`,""}}
 {{edit=false,""}}
+{{setTimeout(()=>{gVal("pageSettingsForm")},1);""}}
 
 <h1 align="center" class="title" >{{locals("images")}}({{images.length}})</h1>
 {{filter?`<h3>${locals("filter")} : ${filter} <atom-bulunan></atom-bulunan></h3>`:""}}
@@ -23,6 +24,7 @@
 <style>
     .container{
     display:grid;
+    align-items: center;
     grid-template-columns: repeat({{columns}},{{100/columns}}%);
     column-gap:5px;
     row-gap:1.5vw;
