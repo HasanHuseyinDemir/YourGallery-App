@@ -28,7 +28,7 @@ window.atomEkleButton={
         ekleForm.aciklama="";
         ekleForm.url="";
         ekleForm.id="";
-        localStorage.setItem("images",JSON.stringify(images));
+        save();
     },
     data:()=>{
         return `<button id="eklebtn" onclick="atomEkleButton.Ekle(),val(),set()">${ekleForm.url.length>0?`${locals("add")}`:`${locals("add_random_image")}`}</button>`
@@ -39,7 +39,7 @@ window.atomSilButton={
     name:"atom-sil-button",
     resimSil:()=>{
         images.pop();val(),set();
-        localStorage.setItem("images",JSON.stringify(images));
+        save();
     },
     data:()=>{
         return `<button id="eklebtn" onclick='atomSilButton.resimSil()'>

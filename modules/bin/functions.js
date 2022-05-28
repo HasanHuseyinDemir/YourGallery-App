@@ -40,3 +40,7 @@ window.toggleEditing=()=>{
     val();
     gVal("pageSettings");
 }
+
+window.save=()=>{
+    localStorage.setItem("images",JSON.stringify(images));
+}
