@@ -1,3 +1,7 @@
+.containerImage input {
+  font-size:2vw;
+  padding: 2vw;
+}
 #editText {
   text-align: center;
       background-color: rgba(128,128,128,0.52);
@@ -281,3 +285,34 @@ nav {
     font-size: 1.4vw;
   }
 /**/
+edit-page > #editFlex {
+  align-items: center;
+  background-color: rgba(37,37,37,0.07);
+}
+.containerImage {
+  align-items: center;
+}
+#wrapFlex{
+  margin-top: -3vw;
+  align-items: center;
+  padding: 2vw;
+}
+#con #editFlex {
+  border-radius: 12px;
+}
+.containerImage img {
+  box-shadow: 5px 5px 12px rgba(0,0,0,0.29);
+}
+.container button {
+  margin-top: 2%;
+  margin-bottom: 3%;
+  width: 100%;
+  padding: 2px;
+  transition: .4s;
+}
+.container button:hover{
+  background-color: rgb(255,179,179);
+}
+#iconsNav {
+  height: 100%;
+}

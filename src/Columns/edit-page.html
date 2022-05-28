@@ -3,6 +3,7 @@
 
 <h1>{{editPref.title}}-Edit </h1>
 <br>
+<div id="wrapFlex">
 <div style="display:flex;" id="con">
 <edit-image-view></edit-image-view>
 <br>
@@ -25,12 +26,13 @@
 </div>
 
 
-<div>
+<div id="editFlex">
+    <h3 align="center">Sayfa içeriği</h3>
     <textarea oninput="editPref.description=this.value" style="resize:vertical">{{editPref.description}}</textarea>
 <button onclick="editPref.set();save();edit=false;val();" align="center" height="100%">Kaydet</button>
 <button onclick="editPref.delete();save();edit=false;val();" align="center" height="100%">Sil</button>
 </div>
-
+</div>
 <style>
     .containerImage h1 {
     text-align: center;
