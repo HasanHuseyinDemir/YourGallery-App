@@ -1,3 +1,11 @@
+div#cards {
+  padding:2vw;
+  white-space: pre-line;
+  background-color: rgba(128,128,128,0.23);
+  border: solid 2px rgba(128,128,128,0.31);
+  border-top:none;
+}
+
 your-gallery{
   letter-spacing: -2px;
 transition: .2s ease-in-out;
