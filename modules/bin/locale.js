@@ -26,6 +26,9 @@ window.locals=(arg)=>{
             case "edit":return "Düzenle";
             case "page_content":return "Sayfa İçeriği";
             case "save":return "Kaydet";
+            case "deleted":return "Aradığınız Resim Silinmiş Olabilir!";
+            case "redirecting":return "Anasayfaya Yönlendiriliyorsunuz...";
+            case "error":return "Hata!";
         }break;
         case "EN":
         switch(arg){
@@ -48,6 +51,9 @@ window.locals=(arg)=>{
             case "edit":return "Edit";
             case "page_content":return "Page Content";
             case "save":return "Save";
+            case "deleted":return "The Picture You Are Looking For May Have Been Deleted!";
+            case "redirecting":return "You are being redirected to the homepage...";
+            case "error":return "Error!";
         }    
         break;
     }
