@@ -22,4 +22,10 @@ window.todosPath={
     name:"todos-path",
 }
 
-contents.push(imageNavigation,pagePath,postsPath,todosPath);
+window.notesPath={
+    src:"./src/advanced/paths/notes-path.html",
+    type:"page",
+    name:"notes-path",
+}
+
+contents.push(imageNavigation,pagePath,postsPath,todosPath,notesPath);

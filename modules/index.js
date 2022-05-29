@@ -11,3 +11,4 @@ export * from "./bin/advanced/contents.js";
 export * from "./bin/advanced/navigation.js";
 export * from "./bin/advanced/pages/posts-page.js";
 export * from "./bin/advanced/pages/todos-page.js";
+export * from "./bin/advanced/pages/notes-page.js";

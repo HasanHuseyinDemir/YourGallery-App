@@ -28,7 +28,8 @@ window.yourGallery={
     }
 }
 
-
+///////
+///Ekle
 window.atomEkleButton={
     type:"atom",
     name:"atom-ekle-button",
@@ -39,7 +40,10 @@ window.atomEkleButton={
             description:ekleForm.aciklama?ekleForm.aciklama:rastgele.aciklama(),
             id:Math.random(),
             posts:[],
-            todos:[]})
+            todos:[],
+            notes:[],
+            images:[],
+        })
 
         ekleForm.baslik="";
         ekleForm.aciklama="";

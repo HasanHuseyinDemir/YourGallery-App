@@ -41,3 +41,14 @@ todos-path{
     margin-top: -2vw;
     padding: 1vw;
 }
+#todoInputText {
+    height: 3vh;
+    width: 32.5vw;
+}
+#addTodo button {
+    padding: 1.45vw
+}
+#todo:hover {
+    background-color:rgb(230,230,230);
+    transition: .4s;
+}
