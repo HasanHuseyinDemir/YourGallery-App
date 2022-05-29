@@ -45,9 +45,3 @@ delete:(postID)=>{
     val();
 }
 }
-
-/*
-    images = images.filter((el) => {
-        return el.id !== arg
-    })
-*/

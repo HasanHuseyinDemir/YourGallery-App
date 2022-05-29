@@ -42,3 +42,13 @@ div#cards{
 #postDate button{
     padding: 1vw;
 }
+#posts h1 {
+    margin-top: -2vw;
+    background-color: white;
+    padding: 1vw;
+    width: 87%;
+    text-align: center;
+    border-radius: 0 12px 3px;
+    text-shadow: 0 3px 3px rgba(0,0,0,0.29);
+    box-shadow:0 3px 3px rgba(0,0,0,0.35);
+}
