@@ -21,6 +21,7 @@ div#cards{
     border-radius: 12px;
     width: 45vw;
     padding:12px;
+    word-wrap:break-word;
 }
 #postDate{
     text-align: center;
