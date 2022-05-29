@@ -2,7 +2,7 @@
 
 <div id="posts">
     {{
-        images[posts.index].posts.length==0?"<h2>Post bulunamadı!</h2>":`<h1>Posts (${images[posts.index].posts.length})</h1>`
+        images[posts.index].posts.length==0?`<h1>Add a Post</h1>`:`<h1>Posts (${images[posts.index].posts.length})</h1>`
     }}
     <div id="inputPosts"><input id="postsInput" placeholder="#{{images[posts.index].posts.length+1}}"/><button onclick="posts.validate()">Post</button></div>
 {{

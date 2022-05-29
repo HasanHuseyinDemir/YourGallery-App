@@ -1,23 +1,37 @@
-<div id="addNote">
-    <h1 align="center">Add a Note</h1>
+<div id="notesNav">
+
+<div id="navNotes">
+    
+    <div id="navigationNotes">
+    <div class="{{noteList.Add?'select':''}}" onclick="noteList.Add=true;val()">Add Note</div>
+    <div class="{{noteList.Add?'':'select'}}" onclick="noteList.Add=false;val()">Notes</div>
+    </div>
+
+
+<div id="addNote" class='{{noteList.Add?"":"disabled"}}' >
+    <h1 align="center" >Add a Note</h1>
     <div id="line"><span>Title</span> <br><input></div>
     <div id="line"><span>Note</span> <br><textarea style="resize:vertical"></textarea></div>
     <button>Add</button>
-    </div>
+</div>
 
-<div id="notes">
+<div id="notes" class='{{noteList.Add?"disabled":""}}' >
     <h1>Notes</h1>
+    
     <div>
     <div class="selected">Geçen gün olanlar</div>
     <div>Merhaba dünya</div>    
     <div>Merhaba dünya</div>    
     <div>Merhaba dünya</div>    
     <div>Merhaba dünya</div>
-</div>
-</div>
+    </div>
+
+</div></div>
 
 
 <div id="note">
     <h2>Geçen Gün Olanlar</h2>
     <p>Neler oldu neler</p>
+</div>
+
 </div>

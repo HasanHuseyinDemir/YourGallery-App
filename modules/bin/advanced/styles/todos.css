@@ -52,3 +52,12 @@ todos-path{
     background-color:rgb(230,230,230);
     transition: .4s;
 }
+#cards h1 {
+    background-color: white;
+    width: 72.55%;
+    border-radius: 0 12px 0 12px;
+    text-shadow: 3px 3px 3px rgb(181,181,181);
+}
+#addTodo {
+    margin-top: 1vw;
+}

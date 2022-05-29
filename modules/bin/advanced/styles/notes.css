@@ -1,0 +1,168 @@
+#navNotes {
+    display: flex;
+    justify-content: space-between;
+    background: gray;
+    padding: 10px;
+}
+#navNotes>div{
+    background-color:white;
+    padding: 12px;
+    width: 100%;
+    margin: 5px;
+    text-align: center;
+}
+#note {
+    margin-top:2vw;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 3.1vw;
+    border-radius: 1.5vw;
+}
+notes-path > h1 {
+    text-align: center;
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.18);
+    margin-bottom: 1vw;
+    text-shadow: 0 3px 3px rgba(0,0,0,0.34);
+}
+notes-path{
+    display: flex;
+    flex-direction: column;
+}
+#notes {
+    margin-top: 2vh;
+    background: white;
+    border-radius: 12px;
+    padding: 2vw;
+    display: grid;
+
+}
+#notes div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction:column;
+    
+}
+#notes div>div{
+    background-color: rgb(219,219,219);
+    width: 100%;
+    margin: 0.2vh;
+    padding: 1vw;
+    display: flex;
+    text-align: center;
+    cursor: pointer;
+    transition: .4s;
+}
+#notes div>div:hover,#notes div>div.selected{
+    background-color: rgb(185,185,185);
+    width: 102%
+}
+
+#addNote {
+    padding: 2vw;
+    background-color: rgba(128,128,128,0.58);
+    border-radius: 1vw;
+    margin-top: 1vw;
+}
+#line {
+    display: flex;
+    flex-direction: column;
+}
+notes-path input {
+    height: 1vh;
+    text-align: center;
+}
+notes-path span {
+    text-align: center;
+    font-size:2vw;
+    font-weight: 600;
+    margin: -1vw;
+}
+notes-path #line textarea {
+    background-color: white;
+    padding: 1vw;
+    font-size:1.5vw;
+}
+notes-path #cards h1 {
+    margin-top: -5vw
+}
+#addNote button{
+    width: 100%;
+    height: 3vw;
+    background-color: rgb(129,168,255);
+    cursor:pointer;
+    transition: .4s;
+}
+#addNote button:hover{
+     background-color: rgb(161,190,255);
+}
+#navigationNotes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 12px;
+}
+#navigationNotes>div{
+    background-color: gray;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    margin: 2px;
+    text-align: center;
+    justify-content: center;
+    color:white;
+    transition: .4s;
+}
+#navigationNotes>div:hover,#navigationNotes div.select {
+    background-color: rgb(164,164,164);
+    color:black;
+    cursor:pointer;
+    text-decoration: underline;
+}
+
+#notes.disabled,
+#addNote.disabled{
+    display: none;
+}
+
+#navNotes {
+    display:flex;
+    flex-direction: column;
+}
+#navigationNotes {
+    display: flex;
+    flex-direction: row;
+    border-radius: 0;
+}
+#navigationNotes > div{
+    width: 100%;
+    height: 100%;
+    padding: 12px;
+}
+#note {
+    border-radius: 0;    
+}
+#navNotes {
+    justify-content: center;
+    align-items: center;
+}
+#notesNav{
+    display: grid;
+    grid-template-columns:  50% auto;
+    margin-top: -3vw;
+}
+#notes {
+    border-radius: 0;
+}
+#addNote {
+    border-radius: 0;
+}
+#note {
+    width: 100%;
+    height: 100%;
+    margin-top: 0;
+    border:solid gray;
+    border-left: none;
+}

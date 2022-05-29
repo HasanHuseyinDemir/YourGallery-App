@@ -1,6 +1,7 @@
 @import url("./bin/advanced/styles/navigation.css");
 @import url("./bin/advanced/styles/posts.css");
 @import url("./bin/advanced/styles/todos.css");
+@import url("./bin/advanced/styles/notes.css");
 
 .containerImage input {
   font-size:2vw;
@@ -329,4 +330,17 @@ h3#titles {
   justify-content: center;
   margin-left: -30%;
   align-items: center;
+}
+#addNote h1 {
+  width: 100%;
+}
+#notes h1 {
+  margin-top: 0.1vh;
+  width: 100%;
+}
+#todoList {
+  margin-top:-2vw;
+}
+#posts h1 {
+  width: 85%;
 }

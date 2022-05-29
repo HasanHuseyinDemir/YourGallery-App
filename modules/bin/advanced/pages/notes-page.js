@@ -1,5 +1,5 @@
-window.notesList={
+window.noteList={
     title:"",
     note:"",
-    toggleAdd:false,
+    Add:true,
 }

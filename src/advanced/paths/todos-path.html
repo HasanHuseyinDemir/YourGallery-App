@@ -5,7 +5,7 @@
 </div>
 
 <div id="todoList">
-    {{images[todoList.index].todos.length<1?"<h1>Görev Kutusu Boş!</h1>":""}}
+    {{images[todoList.index].todos.length<1?"<br><br><br><h3>Görev Kutusu Boş!</h3>":""}}
     {{
         images[todoList.index].todos.map((el)=>{
             return `
