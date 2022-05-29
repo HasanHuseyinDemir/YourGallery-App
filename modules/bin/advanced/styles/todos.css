@@ -1,0 +1,43 @@
+#addTodo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#addTodo button{
+padding: 2.4vw;
+}
+#todo {
+    display: grid;
+    grid-template-columns: 10% 70% 20%;
+    align-items: center;
+    background-color: white;
+    width: 37vw;
+    padding:2vw;
+    box-shadow: 2px 2px 3px;
+    margin-top: -1vw;
+        word-wrap:break-word;
+}
+#todo input{
+    color: black;
+    margin-right: 1vw;
+}
+todos-path{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#todo.completed{
+    background-color: rgb(224,224,224);
+}
+#todo.completed span{
+        font-style: italic;
+        text-decoration:line-through;
+}
+#todo input {
+    height: 180%;
+    width: 80%;
+}
+#cards h1 {
+    margin-top: -2vw;
+    padding: 1vw;
+}

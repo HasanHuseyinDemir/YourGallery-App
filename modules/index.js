@@ -9,5 +9,5 @@ export * from "./bin/default.js";
 //Advanced Folder
 export * from "./bin/advanced/contents.js";
 export * from "./bin/advanced/navigation.js";
-export * from "./bin/advanced/posts-page.js";
-export * from "./bin/advanced/todos-page.js";
+export * from "./bin/advanced/pages/posts-page.js";
+export * from "./bin/advanced/pages/todos-page.js";
