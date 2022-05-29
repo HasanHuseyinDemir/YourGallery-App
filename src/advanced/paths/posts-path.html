@@ -9,7 +9,7 @@
     images[posts.index].posts.map((el)=>{
         return `
         <div id="post">
-            <div id="postDate">${el.date}</div>
+            <div id="postDate">${el.date}<button onclick="posts.delete(${el.id})">Delete</button></div>
             <div id="postContent">${el.post}</div>
         </div>`
     }).join("");

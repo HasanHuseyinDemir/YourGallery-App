@@ -26,6 +26,10 @@ div#cards{
 #postDate{
     text-align: center;
     background-color: rgba(128,128,128,0.27);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5vw;
 }
 #posts{
     display: flex;
@@ -33,4 +37,8 @@ div#cards{
     justify-content: center;
     align-items: center;
     row-gap: 1vw;
+}
+
+#postDate button{
+    padding: 1vw;
 }

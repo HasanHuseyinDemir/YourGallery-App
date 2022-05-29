@@ -30,14 +30,24 @@ validate:()=>{
     posts.post===""?console.log("Alan dolu olmalıdır!"):posts.set();
     postsInput.value="";
     posts.clear();
+    save();
     val();
 },
-list:()=>{
-posts.getId();
-images[posts.index].posts.map((el)=>{
-return `Post = ${el.post}`
-})
+delete:(postID)=>{
+    var length=images[posts.index].posts.length;
+    images[posts.index].posts.forEach(el=>{
+        if(el.id!==postID){
+            images[posts.index].posts.push(el);
+        }
+    }); 
+    images[posts.index].posts=images[posts.index].posts.slice(length);
+    save();
+    val();
 }
 }
 
-
+/*
+    images = images.filter((el) => {
+        return el.id !== arg
+    })
+*/
