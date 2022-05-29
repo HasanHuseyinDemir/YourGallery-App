@@ -1,0 +1,18 @@
+<section id="imageNavigation">
+<div onclick="route.set('page')" class="{{route.path==="page"&&'activeNav'}}">Page</div>
+<div onclick="route.set('posts')" class="{{route.path==="posts"&&'activeNav'}}">Posts</div>
+<div onclick="route.set('todos')" class="{{route.path==="todos"&&'activeNav'}}">Todos</div>
+<div onclick="route.set('notes')" class="{{route.path==="notes"&&'activeNav'}}">Notes</div>
+<div onclick="route.set('images')" class="{{route.path==="images"&&'activeNav'}}">Images</div>
+</section>
+<hr>
+
+{{posts.getId(),""}}
+
+<div id="cards">
+{{route.path==="page"?'<page-path></page-path>':""}}
+{{route.path==="posts"?'<posts-path></posts-path>':""}}
+{{route.path==="todos"?'<todos-path></todos-path>':""}}
+{{route.path==="notes"?'<notes-path></notes-path>':""}}
+{{route.path==="images"?'<images-path></images-path>':""}}
+</div>

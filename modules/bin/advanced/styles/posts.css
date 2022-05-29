@@ -1,0 +1,35 @@
+div#cards{ 
+    width: 100%;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    margin-top: -2vw;
+}
+#inputPosts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#inputPosts button,#inputPosts input{
+    padding: 1vw;
+    height: 5vw;
+}
+#inputPosts input{
+    width: 40vw;
+}
+#post{
+    background-color: white;
+    border-radius: 12px;
+    width: 45vw;
+    padding:12px;
+}
+#postDate{
+    text-align: center;
+    background-color: rgba(128,128,128,0.27);
+}
+#posts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1vw;
+}

@@ -1,0 +1,27 @@
+#imageNavigation{
+    display: flex;        
+    }
+#imageNavigation {
+    margin-top: 2vw;
+    justify-content: space-around;
+    background-color: rgba(190,190,190,0.5);
+    padding:0.5vw;
+    column-gap: 0.4vw;
+    
+}
+#imageNavigation>div{
+    display: flex;
+    background-color: rgba(255,255,255,0.4);
+    height: 5vh;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 2px;
+    transition: .4s;
+    border:solid 1px;
+}
+#imageNavigation>div:hover,
+#imageNavigation>div.activeNav{
+    background-color: white;
+    cursor: pointer;
+}

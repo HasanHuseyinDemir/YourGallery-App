@@ -1,3 +1,6 @@
+@import url("./bin/advanced/styles/navigation.css");
+@import url("./bin/advanced/styles/posts.css");
+
 .containerImage input {
   font-size:2vw;
   padding: 2vw;
@@ -23,7 +26,6 @@
   }
 
 div#cards {
-  padding:2vw;
   white-space: pre-line;
   background-color: rgba(128,128,128,0.23);
   border: solid 2px rgba(128,128,128,0.31);
@@ -64,10 +66,6 @@ color:rgb(43,43,43);
 
 img{
     border-radius: 10px;
-}
-p#description{
-    font-weight: 300;
-    font-size: {{`${20-columns}`}}px;
 }
 h3#titles{
     font-weight: 500;

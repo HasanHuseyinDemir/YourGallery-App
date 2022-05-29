@@ -1,7 +1,7 @@
 window.compositions=(src)=>{
     return `<image-composition>
     <h3 id="titles" slot="title">${src.title?src.title.slice(0,14):""}</h3>
-    <img slot="picture" style="max-height:100%;max-width:100%;" onclick="toggleAboutImage(${src.id}),gVal('pageSettingsForm')"   src="${src.src}"></img>
+    <img slot="picture" style="max-height:100%;max-width:100%;cursor:pointer;" onclick="toggleAboutImage(${src.id}),gVal('pageSettingsForm')"   src="${src.src}"></img>
 
     <button slot="buttons" onclick="sil(${src.id})">${locals("delete")}</button>
     </image-composition>`
@@ -10,10 +10,11 @@ window.compositions=(src)=>{
 //    <p id="description" style="margin-top:10px" slot="description">${src.description?src.description.slice(0,0):"<br>"}</p>
 
 window.cards=()=>{
-    return `<div id="card">
+    return `
+    <div id="card">
     <div id="imageselected"><img id="cards"  src="${images.find(el=>el.id==selectedImage).src}"/></div>
     <h1 id="cards" align="center">${images.find(el=>el.id==selectedImage).title}</h1>
-    <div id="cards">${images.find(el=>el.id==selectedImage).description}</div>
+    <image-navigation></image-navigation>
     </div>`
 }
 window.editing=()=>{
