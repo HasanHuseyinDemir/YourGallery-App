@@ -33,7 +33,14 @@ window.atomEkleButton={
     type:"atom",
     name:"atom-ekle-button",
     Ekle:()=>{
-        images.push({src:ekleForm.url?ekleForm.url:rastgele.resim(),title:ekleForm.baslik?ekleForm.baslik:rastgele.baslik(),description:ekleForm.aciklama?ekleForm.aciklama:rastgele.aciklama(),id:Math.random(),posts:[]})
+        images.push({
+            src:ekleForm.url?ekleForm.url:rastgele.resim(),
+            title:ekleForm.baslik?ekleForm.baslik:rastgele.baslik(),
+            description:ekleForm.aciklama?ekleForm.aciklama:rastgele.aciklama(),
+            id:Math.random(),
+            posts:[],
+            todos:[]})
+
         ekleForm.baslik="";
         ekleForm.aciklama="";
         ekleForm.url="";

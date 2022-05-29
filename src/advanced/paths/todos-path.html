@@ -1,18 +1,19 @@
-<h1 align="center">Todo List</h1>
+<h1 align="center">Todo List ({{images[todoList.index].todos.length}})</h1>
 
 <div id="addTodo">
-    <input type="text"/><button>Add</button>
+    <input id="todoInputText" type="text"/><button onclick="todoList.validate()">Add</button>
 </div>
 
 <div id="todoList">
-
-    <div id="todo">
-        <input type="checkbox" /><span>SelamlarSelamlarSelamlarSelamlarSelamlarSelamlar</span>
-        <button>Delete</button>
-    </div>
-    <div id="todo" class="completed">
-        <input type="checkbox" /><span>Selamlar</span>
-        <button>Delete</button>
-    </div>
+    {{images[todoList.index].todos.length<1?"<h1>Görev Kutusu Boş!</h1>":""}}
+    {{
+        images[todoList.index].todos.map((el)=>{
+            return `
+            <div id="todo" class="${el.completed?'completed':''}">
+                <input type="checkbox" onclick="todoList.check(${el.id})" ${el.completed?"checked":""} /><span>${el.task}</span>
+                <button onclick="todoList.delete(${el.id})">Delete</button>
+            </div>`
+        }).join("");
+    }}
 
 </div>
