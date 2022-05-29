@@ -28,4 +28,10 @@ window.notesPath={
     name:"notes-path",
 }
 
-contents.push(imageNavigation,pagePath,postsPath,todosPath,notesPath);
+window.imagesPath={
+    src:"./src/advanced/paths/images-path.html",
+    type:"page",
+    name:"images-path",
+}
+
+contents.push(imageNavigation,pagePath,postsPath,todosPath,notesPath,imagesPath);

@@ -1,0 +1,32 @@
+#imagesFlex{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: auto auto auto;
+    grid-row-gap: 10px;
+}
+#imagesFlex #image{
+    position: relative;
+}
+#imagesFlex>#image>img{
+    max-width: 33vh;
+    max-height: 33vh;
+    width: auto;
+    height: auto;
+}
+#imagesFlex>#image>button{
+    position: absolute;
+    padding: 10px;
+    top: 2px;
+    right: 2px;
+    z-index: 100;
+    border-radius: 7px;
+    transition: .4s;
+    background-color:rgba(255,255,255,0.4);
+}
+#imagesFlex>#image>button:hover{
+        background-color:rgb(255,255,255)
+}
+images-path>h2 {
+    margin-top: -3vw
+}

@@ -2,6 +2,7 @@
 @import url("./bin/advanced/styles/posts.css");
 @import url("./bin/advanced/styles/todos.css");
 @import url("./bin/advanced/styles/notes.css");
+@import url("./bin/advanced/styles/images.css");
 
 .containerImage input {
   font-size:2vw;
