@@ -16,4 +16,10 @@ window.postsPath={
     name:"posts-path",
 }
 
-contents.push(imageNavigation,pagePath,postsPath);
+window.todosPath={
+    src:"./src/advanced/paths/todos-path.html",
+    type:"page",
+    name:"todos-path",
+}
+
+contents.push(imageNavigation,pagePath,postsPath,todosPath);
