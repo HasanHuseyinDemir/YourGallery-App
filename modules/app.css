@@ -345,3 +345,8 @@ h3#titles {
 #posts h1 {
   width: 85%;
 }
+#preferences{
+  padding: 12px;
+  font-weight: 300;
+  background-color: rgba(255,255,255,0.61);
+}
