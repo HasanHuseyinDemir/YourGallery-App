@@ -6,7 +6,7 @@
 <section id="imageNavigation">
 <div onclick="route.set('page')" class="{{route.path==="page"&&'activeNav'}}">{{locals("page")}}</div>
 <div onclick="route.set('posts')" class="{{route.path==="posts"&&'activeNav'}}">{{locals("posts")}} ({{images[posts.index].posts.length}})</div>
-<div onclick="route.set('todos')" class="{{route.path==="todos"&&'activeNav'}}">{{locals("todos")}} ({{images[todoList.index].todos.length}})</div>
+<div onclick="route.set('todos')" class="{{route.path==="todos"&&'activeNav'}}">{{locals("todos")}} ({{getTodo.completed(todoList.index)}}/{{images[todoList.index].todos.length}})</div>
 <div onclick="route.set('notes')" class="{{route.path==="notes"&&'activeNav'}}">{{locals("notes")}} ({{images[noteList.index].notes.length}})</div>
 <div onclick="route.set('images')" class="{{route.path==="images"&&'activeNav'}}">{{locals("images")}} ({{images[imagesList.index].images.length}})</div>
 </section>

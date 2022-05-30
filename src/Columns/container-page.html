@@ -9,7 +9,7 @@
 {{
     atomBulunan.found=0;
     if(filter==""){ 
-        images.map((src)=>compositions(src)).join("");
+        images.map((src,index)=>compositions(src,index)).join("");
     }else{
         images.map((src)=>{
             if(src.title.toLowerCase()==filter.toLowerCase()){

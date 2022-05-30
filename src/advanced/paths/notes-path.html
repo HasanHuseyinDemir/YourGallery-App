@@ -33,7 +33,7 @@
 
 
 <div id="note">
-    <div style="display:flex;justify-content:space-between;"><h2>{{activeNote.title}}</h2>{{activeNote.title.length>0?`<button onclick='noteList.delete(${activeNote.id})'>Delete</button>`:""}}</div>
+    <div style="display:flex;justify-content:space-between;"><h2>{{activeNote.title}}</h2>{{activeNote.title.length>0?`<button onclick='noteList.delete(${activeNote.id})'>${locals("delete")}</button>`:""}}</div>
     {{activeNote.note}}
 </div>
 

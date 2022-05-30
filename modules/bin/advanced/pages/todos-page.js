@@ -46,3 +46,13 @@ window.todoList={
         val();
     }
 }
+
+window.getTodo={
+    completed:(index)=>{
+        var i=0;
+        images[index].todos.map((el)=>{
+            el.completed?i++:""
+        })
+        return i;
+    }
+}

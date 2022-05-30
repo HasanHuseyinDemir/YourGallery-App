@@ -38,7 +38,7 @@ window.locals=(arg)=>{
             case "empty_todo":return "Görev Kutusu Boş!";
             case "empty_note":return "Not Kutusu Boş!";
             case "empty_image":return "Resimler Kutusu Boş!"
-            case "add_a_post":return "Post Ekle";
+            case "add_a_post":return "Gönderi Ekle";
             case "note":return "Not";
             case "add_a_note":return "Not Ekle";
             case "images":return "Resimler";
