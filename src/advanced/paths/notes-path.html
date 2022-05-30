@@ -3,23 +3,23 @@
 <div id="navNotes">
     
     <div id="navigationNotes">
-    <div class="{{noteList.Add?'select':''}}" onclick="noteList.Add=true;val()">Add Note</div>
-    <div class="{{noteList.Add?'':'select'}}" onclick="noteList.Add=false;val()">Notes</div>
+    <div class="{{noteList.Add?'select':''}}" onclick="noteList.Add=true;val()">{{locals("add_a_note")}}</div>
+    <div class="{{noteList.Add?'':'select'}}" onclick="noteList.Add=false;val()">{{locals("notes")}}</div>
     </div>
 
 
 <div id="addNote" class='{{noteList.Add?"":"disabled"}}' >
-    <h1 align="center" >Add a Note</h1>
-    <div id="line"><span>Title</span> <br><input id="noteTitle"/></div>
-    <div id="line"><span>Note</span> <br><textarea id="noteText" style="resize:vertical"></textarea></div>
-    <button onclick="noteList.validate()">Add</button>
+    <h1 align="center" >{{locals("add_a_note")}}</h1>
+    <div id="line"><span>{{locals("title")}}</span> <br><input id="noteTitle"/></div>
+    <div id="line"><span>{{locals("note")}}</span> <br><textarea id="noteText" style="resize:vertical"></textarea></div>
+    <button onclick="noteList.validate()">{{locals("add")}}</button>
 </div>
 
 <div id="notes" class='{{noteList.Add?"disabled":""}}' >
-    <h1>Notes</h1>
+    <h1>{{locals("notes")}}</h1>
     
     <div><!--Notların Listesi-->
-        {{images[noteList.index].notes.length<1?"<h3>Not Kutusu Boş!</h3>":""}}
+        {{images[noteList.index].notes.length<1?"<h3>"+locals("empty_note")+"</h3>":""}}
         {{
             images[noteList.index].notes.map((el)=>{
                 return `

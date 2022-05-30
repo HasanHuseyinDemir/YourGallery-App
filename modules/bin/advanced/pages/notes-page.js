@@ -26,7 +26,6 @@ window.noteList={
         save();
     },
     delete:(id)=>{
-        console.log(id);
         var length=images[noteList.index].notes.length;
         images[noteList.index].notes.forEach(el=>{
             if(el.id!==id){

@@ -1,32 +1,55 @@
-#imagesFlex{
+.containerImages {
     display: grid;
-    justify-items: center;
-    align-items: center;
-    grid-template-columns: auto auto auto;
-    grid-row-gap: 10px;
+    grid-template-columns: auto auto auto auto;
+    height: 100%;
+  }
+
+.containerImages img{
+    border: solid 2px rgba(0, 0, 0, 0.26);
+    transition: 0.4s ease-in-out;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.22);
+    width: 90%;
+    height: 90%;
 }
-#imagesFlex #image{
+#image{
     position: relative;
 }
-#imagesFlex>#image>img{
-    max-width: 33vh;
-    max-height: 33vh;
-    width: auto;
-    height: auto;
+
+
+#inputImages{
+    display: flex;
+    justify-content:  center;
 }
-#imagesFlex>#image>button{
-    position: absolute;
-    padding: 10px;
-    top: 2px;
-    right: 2px;
+#inputImages>input{
+    width: 90%;
+    height: 2vw;
+}
+
+#image>span{
     z-index: 100;
-    border-radius: 7px;
+    height: 2vw;
+    width: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-size: 1vw;
+    border:solid 2px;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,0.45);
     transition: .4s;
-    background-color:rgba(255,255,255,0.4);
 }
-#imagesFlex>#image>button:hover{
-        background-color:rgb(255,255,255)
+#image>span:hover{
+    background-color: rgb(255,255,255);
+    cursor:pointer;
 }
-images-path>h2 {
-    margin-top: -3vw
+#image>span{
+    right: 0;
 }
+h2#resimler {
+    margin-top: -3vw;
+    text-align: center;
+    background-color: rgba(255,255,255,0.47);
+    padding: 12px;
+}
+

@@ -33,6 +33,21 @@ window.locals=(arg)=>{
             case "deleted":return "Aradığınız Resim Silinmiş Olabilir!";
             case "redirecting":return "Anasayfaya Yönlendiriliyorsunuz...";
             case "error":return "Hata!";
+
+            case "page":return "Sayfa";
+            case "empty_todo":return "Görev Kutusu Boş!";
+            case "empty_note":return "Not Kutusu Boş!";
+            case "empty_image":return "Resimler Kutusu Boş!"
+            case "add_a_post":return "Post Ekle";
+            case "note":return "Not";
+            case "add_a_note":return "Not Ekle";
+            case "images":return "Resimler";
+            case "posts":return "Gönderiler";
+            case "todos":return "To-Do";
+            case "notes":return "Notlar";
+            case "todolist":return "Yapılacaklar Listesi";
+            case "post":return "Gönderi";
+
         }break;
         case "EN":
         switch(arg){
@@ -58,6 +73,20 @@ window.locals=(arg)=>{
             case "deleted":return "The Picture You Are Looking For May Have Been Deleted!";
             case "redirecting":return "You are being redirected to the homepage...";
             case "error":return "Error!";
+
+            case "page":return "Page";
+            case "empty_todo":return "To-do list is empty right now!";
+            case "empty_note":return "Note list is currently empty!";
+            case "empty_image":return "Image list is currently empty!"
+            case "add_a_post":return "Add a Post";
+            case "note":return "Note";
+            case "add_a_note":return "Add a Note";
+            case "images":return "Images";
+            case "posts":return "Posts";
+            case "todos":return "To-Do";
+            case "notes":return "Notes";
+            case "todolist":return "To-Do List";
+            case "post":return "Post";
         }    
         break;
     }
