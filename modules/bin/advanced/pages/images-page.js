@@ -19,7 +19,7 @@ window.imagesList={
     },
     validate:()=>{
         imagesList.get();
-        imagesList.src.length>0&&imagesList.src.length>0?imagesList.set():alert("Dolu Olmalıdır!");
+        imagesList.src.length>0&&imagesList.src.length>0?imagesList.set():"";
         val();
         save();
     },
@@ -36,22 +36,3 @@ window.imagesList={
     }
 
 }
-
-
-/*
-    {{images[imagesList.index].images.length<1?"<h3>Resimler Kutusu Boş!</h3>":""}}
-
-    {{
-        images[imagesList.index].images.map((el)=>{
-            return `
-            <div id="image">
-                <button onclick="imagesList.delete(${el.id})">X</button>
-                <img src="${el.src}">
-            </div>`
-        }).join("");
-    }} 
-
-
-
-
-*/

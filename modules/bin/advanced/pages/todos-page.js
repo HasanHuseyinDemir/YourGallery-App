@@ -19,7 +19,7 @@ window.todoList={
     },
     validate:()=>{
         todoList.get();
-        todoList.task===""?alert("Alan dolu olmalıdır!"):todoList.set();
+        todoList.task===""?"":todoList.set();
         todoList.clear();
         save();
         val();

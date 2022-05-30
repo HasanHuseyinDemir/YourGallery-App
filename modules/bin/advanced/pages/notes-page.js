@@ -21,7 +21,7 @@ window.noteList={
     },
     validate:()=>{
         noteList.get();
-        noteList.title.length>0&&noteList.note.length>0?noteList.set():alert("Dolu Olmalıdır!");
+        noteList.title.length>0&&noteList.note.length>0?noteList.set():"";
         val();
         save();
     },

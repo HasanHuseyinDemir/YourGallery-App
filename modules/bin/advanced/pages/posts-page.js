@@ -27,7 +27,7 @@ clear:()=>{
 },
 validate:()=>{
     posts.get();
-    posts.post===""?alert("Alan dolu olmalıdır!"):posts.set();
+    posts.post===""?"":posts.set();
     postsInput.value="";
     posts.clear();
     save();
